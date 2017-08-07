@@ -1,0 +1,283 @@
+[id="root"] {
+  .App {
+    text-align: center;
+
+    .App-intro {
+      font-size: large;
+    }
+
+    .header {
+      height: 150px;
+
+      .company-dashboard {
+        color: #2B405B;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 175px;
+        text-align: left;
+        padding: 25px 15px;
+      }
+
+      .top-bar {
+        height: 72px !important;
+        border: 1px solid #D8DDE6 !important;
+        background-color: #FFFFFF !important;
+
+        .navbar-brand {
+          padding: 10px 15px 0 15px !important;
+        }
+
+        li {
+          font-size: 18px;
+          font-weight: 500;
+          padding: 9px 0;
+          margin: 0 15px;
+          color: #657FAC !important;
+
+          a {
+            color: #2B405B !important;
+            background: transparent !important;
+            padding: 15px 0;
+
+            .caret {
+              margin-left: 5px;
+              border-top: 6px dashed;
+              border-right: 5px solid transparent;
+              border-left: 5px solid transparent;
+            }
+          }
+        }
+
+        .active {
+          color: #657FAC !important;
+          border-bottom: 2px solid #657FAC;
+
+          a {
+            color: #657FAC !important;
+            background: transparent !important;
+          }
+        }
+      }
+    }
+
+    .widget {
+      -webkit-box-shadow: 2px 2px 2px 1px rgba(238, 238, 238, 0.66);
+      box-shadow: 2px 2px 5px 3px rgba(238, 238, 238, 0.66);
+      height: 300px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background-color: #ffffff;
+
+      .widget-header {
+        border-bottom: thin solid #D8DDE6;
+        color: #2B405B;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: left;
+        padding: 16px 20px;
+        white-space: nowrap;
+
+        .drop-down-menu {
+          position: absolute;
+          background: #FFFFFF;
+          border: thin solid #D8DDE6;
+          border-radius: 4px;
+          padding: 4px 0;
+          right: 20px;
+          margin-top: 5px;
+          z-index: 5;
+
+          .menu-item {
+            padding: 8px 15px;
+            border-bottom: thin solid #e1e1e1;
+
+            &:hover {
+              background-color: #286090;
+              color: #ffffff;
+            }
+          }
+        }
+
+        .widget-menu {
+          float: right;
+
+          a {
+            &:hover, &:focus {
+              text-decoration: none !important;
+            }
+          }
+
+          .menu-text {
+            color: #77909D;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+          }
+
+          .days-icons {
+            margin: 0 15px 0 5px;
+          }
+        }
+      }
+
+      .widget-content {
+        margin: 0 !important;
+        padding: 15px 15px 0 15px !important;
+        text-align: left;
+
+        .user-badge {
+          font-size: 11px;
+          border-radius: 20px;
+          padding: 4px;
+          font-weight: bold;
+          color: #ffffff;
+          position: absolute;
+          border: thin solid #ffffff;
+        }
+
+        .user {
+          padding: 2px;
+
+          .user-avatar {
+            padding: 5px;
+            line-height: 0.75;
+            vertical-align: middle;
+            border: 1px solid #FFFFFF;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            background-color: #761c19;
+            color: #ffffff;
+          }
+
+          .user-name {
+            font-size: 14px;
+            white-space: nowrap;
+            color: #2B405B;
+          }
+
+          .user-activity {
+            .progress {
+              height: 12px !important;
+              margin-top: 4px !important;
+              border-radius: 10px !important;
+            }
+          }
+
+          .user-value {
+            color: #2B405B;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 19px;
+          }
+        }
+
+        .mobile-user {
+          padding-top: 15px;
+
+          .color {
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            padding: 5px;
+            width: 14px;
+            height: 14px;
+            margin-top: 5px;
+          }
+
+          .elle {
+            background-color: #5A68C6;
+          }
+
+          .lester {
+            background-color: #FFD331;
+          }
+
+          .dmitry {
+            background-color: #F65161;
+          }
+
+          .name {
+            color: #2B405B;
+            font-size: 14px;
+            white-space: nowrap;
+
+            .time {
+              font-weight: bold;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .gauge-chart {
+          float: right;
+        }
+      }
+
+      .widget-content-user {
+        padding: 0 15px !important;
+      }
+
+      .widget-footer {
+        height: 30px;
+        border-top: thin solid #D8DDE6;
+        text-align: left;
+        padding: 5px 15px;
+
+        .bottom-users {
+          padding-right: 50px;
+
+          .bottom-badge {
+            font-size: 11px;
+            border-radius: 20px;
+            padding: 3px;
+            font-weight: bold;
+            color: #ffffff;
+            position: absolute;
+            border: thin solid #ffffff;
+
+            &:nth-child(1n+1) {
+              margin-left: 0;
+            }
+
+            &:nth-child(1n+2) {
+              margin-left: 15px;
+            }
+
+            &:nth-child(1n+3) {
+              margin-left: 30px;
+            }
+          }
+        }
+
+        .more-text {
+          height: 16px;
+          width: 68px;
+          color: #77909D;
+          font-size: 14px;
+          margin-left: 10px;
+        }
+
+        .lowest {
+          color: #657FAC;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 11px;
+          margin-left: 15px;
+          text-transform: uppercase;
+          background-color: rgba(101, 127, 172, 0.1);
+        }
+      }
+    }
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
